@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Orbitron", sans-serif; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  /* background: linear-gradient(to bottom, #ffccff, #99ccff); */
+  background: linear-gradient(to bottom, #2a1b6b, #5c44a2);
+  position: relative;
+}
+
+.estrelas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(3px 3px at 25% 15%, #fff, transparent),
+    radial-gradient(7px 6px at 75% 15%, #fff, transparent),
+    radial-gradient(6px 6px at 25% 85%, #fff, transparent),
+    radial-gradient(6px 6px at 75% 85%, #fff, transparent);
+}
+
+.formulario {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 16px;
+  padding: 35px;
+}
+
+.formulario h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.caixa-formulario {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.caixa-formulario input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.caixa-formulario input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.caixa-formulario i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+}
+.caixa-lembrar-esqueci {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.caixa-lembrar-esqueci label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.caixa-lembrar-esqueci label input {
+  accent-color: rgb(201, 170, 32);
+  cursor: pointer;
+}
+
+.caixa-lembrar-esqueci a {
+  color: #fff;
+}
+
+.caixa-lembrar-esqueci a:hover {
+  text-decoration: underline;
+}
+button {
+  width: 100%;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #2a1b6b;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
+  background: #af2898;
+  color: #fff;
+  transform: translateY(-5px);
+}
+.link-registro {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.link-registro a {
+  color: #fff;
+  font-weight: 600;
+}
+.link-registro a:hover {
+  text-decoration: underline;
+}
