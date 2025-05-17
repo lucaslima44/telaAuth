@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Entrar</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastre-se</title>
   </head>
   <body>
+    <div class="estrelas"></div>
     <div class="formulario">
       <div id="error-message" class="error-message"></div>
       <div id="success-message" class="success-message"></div>
-      <h2>Login</h2>
-      <form action="#" id="auth-form">
+      <h2>Cadastre-se</h2>
+      <form action="#">
         <div class="caixa-formulario">
           <input
-            type="text"
+            type="email"
             placeholder="Email"
+            id="email"
             required
             autocomplete="off"
-            id="email"
           />
           <i class="bx bxs-user"></i>
         </div>
@@ -30,26 +27,19 @@
           <input
             type="password"
             placeholder="Senha"
+            id="password"
             required
             autocomplete="off"
-            id="password"
           />
           <i class="bx bxs-lock-alt"></i>
         </div>
 
-        <div class="caixa-lembrar-esqueci">
-          <label><input type="checkbox" />Lembrar-me</label>
-          <a href="#">Esqueceu a senha?</a>
-        </div>
-        <button type="submit" id="login-button">Entrar</button>
+        <button type="submit" id="submit">Criar Conta</button>
         <div class="link-registro">
-          <p>
-            Não tem conta?
-            <a href="cadastro.html" id="signup-button">Cadastre-se</a>
-          </p>
+          <p>Já tem conta? <a href="index.html">Entre</a></p>
         </div>
       </form>
     </div>
-    <script type="module" src="./login.js" defer></script>
+    <script type="module" src="./register.js" defer></script>
   </body>
 </html>

@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 
-.estrelas {
+/* .estrelas {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@ body {
     radial-gradient(7px 6px at 75% 15%, #fff, transparent),
     radial-gradient(6px 6px at 25% 85%, #fff, transparent),
     radial-gradient(6px 6px at 75% 85%, #fff, transparent);
-}
+} */
 
 .formulario {
   width: 400px;
@@ -91,6 +91,7 @@ body {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .caixa-lembrar-esqueci label input {
@@ -100,6 +101,7 @@ body {
 
 .caixa-lembrar-esqueci a {
   color: #fff;
+  font-size: 12px;
 }
 
 .caixa-lembrar-esqueci a:hover {
@@ -134,4 +136,30 @@ button:hover {
 }
 .link-registro a:hover {
   text-decoration: underline;
+}
+
+.error-message {
+  color: #fff;
+  background-color: darkgoldenrod;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: justify;
+  box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.3);
+  font-weight: 600;
+  font-size: 14px;
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.success-message {
+  color: #fff;
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0, 255, 0, 0.3);
+  font-weight: 600;
+  font-size: 14px;
+  display: none;
+  margin-bottom: 2rem;
 }
